@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clinITA</title>
+</head>
+<style>
+    html, body {
+        margin: 0;
+    }
+    body {
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+    }
+    .wrapper {
+        width: 1200px;
+        display: flex;
+        margin: 0 auto;
+        background-color: aquamarine;        
+    }
+    .main {
+        display: flex;
+        flex-flow:column;
+        width: 85%;
+    }
+    .menu {
+        width: 15%;
+        background-color: aqua;
+        padding: 10px 20px 0px;
+        position:sticky;
+        display: flex;
+    }
+    #link_menu {
+        align-items: center;
+        font-size: 20px;
+    }
+    .header {
+        background-color: rgb(5, 108, 108);
+        min-height: 150px;    
+    }
+    #nome_empresa{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold; 
+    }
+    .content {
+        background-color: white;
+        min-height: 350px; 
+        padding: 20px;
+    }
+    #texto1 {
+        text-align: center;
+    }
+    #servicos {
+        text-align: center;
+        font-size: 30px;
+    }
+    .footer {
+        background-color: rgb(99, 56, 240);
+        min-height: 100px;
+    }
+    #texto_footer1 {
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui será o meu menu-->
+            <ul id="link_menu">
+                <li><a href="index.html">Pagina Principal</a></li><br><br><hr>
+                <li><a href="sobre.html">Sobre a Clínica</a></li><br><br><hr>
+                <li><a href="valores.html">Consulta e Valores</a></li><br><br><hr>
+                <li><a href="horario.html">Horário de Atendimento</a></li><p><hr>
+                <li><a href="contato.html">Entre em Contato</a></li><p><hr>
+                <li><a href="video_inst.html">Vídeo Institucional</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="img/imclinita_contato.jpg" width="1000" height="200" title="Logo Inicial">
+                <p id="nome_empresa"><font color="black" face="'Trebuchet MS">clin</font><font color="violet">ITA</font></p>
+                <!-- Aqui vai ser o meu Header-->
+            </div>
+        <div class="content">
+                <h1>Entre em Contato Conosco</h1>
+                <h3><font color="violet">Contato / Whatsapp: (73)98805-2085 
+                    --- Site: www.clinita.com --- Instagram: @clinita <br>
+                Rua: Carlos Gomes, 305 / Bairro: Centro</font></h3><br>
+                
+                <h2>Localização:</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3814.55971426605!2d-39.54023842564026!3d-17.045253254996638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x735a4dad04fcc7f%3A0xb3cd1af176850ca4!2sR.%20Carlos%20Gomes%2C%20305%2C%20Itamaraju%20-%20BA%2C%2045836-000!5e0!3m2!1spt-BR!2sbr!4v1699069991145!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br><br>
+                <h2>E-mail Institucional:</h2>  
+                    <form>
+                        <fieldset>
+                            <label>Nome:<input type="text" /></label><br><br>
+                            <label>E-mail:<input type="email" /></label><br><br>
+                            <select name="role">
+                                <option value="">Selecione a Consulta</option>
+                                <option value="neurologista">Neurologista</option>
+                                <option value="pediatra">Pediatra</option>
+                                <option value="urologista">Urologista</option>
+                                <option value="dermatologista">Dermatologista</option>
+                                <option value="psiquiatra">Psiquiatra</option>
+                                <option value="ginecologista">Ginecologista</option>
+                            </select><br><br>
+                            <textarea rows="10" cols="50" maxlength="15" name="message">Mensagem</textarea><br>
+                            <button type="submit">Enviar</button>
+                        </fieldset>
+                    </form> <br><br>
+
+                <a href= "index.html">(Voltar)</a> </h2>
+                <!--Aqui vai ser o meu conteúdo-->
+            </div>
+
+        <div class="footer"> 
+                <h2 id="texto_footer1">CENTRAL DE ATENDIMENTO</h2>
+                <p><font face="Monotype Corsiva">Contato / Whatsapp: (73)98805-2085 &emsp; &emsp;
+                    &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;
+                    Site: www.clinita.com &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;
+                    &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    &ensp;Instagram: @clinita</p></font>
+                <!--Aqui vai ser o meu rodapé-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

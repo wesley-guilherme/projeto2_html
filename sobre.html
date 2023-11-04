@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clinITA</title>
+</head>
+<style>
+    html, body {
+        margin: 0;
+    }
+    body {
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+    }
+    .wrapper {
+        width: 1200px;
+        display: flex;
+        margin: 0 auto;
+        background-color: aquamarine;        
+    }
+    .main {
+        display: flex;
+        flex-flow:column;
+        width: 85%;
+    }
+    .menu {
+        width: 15%;
+        background-color: aqua;
+        padding: 10px 20px 0px;
+        position:sticky;
+        display: flex;
+    }
+    #link_menu {
+        align-items: center;
+        font-size: 20px;
+    }
+    .header {
+        background-color: rgb(5, 108, 108);
+        min-height: 150px;    
+    }
+    #nome_empresa{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold; 
+    }
+    .content {
+        background-color: white;
+        min-height: 350px; 
+        padding: 20px;
+    }
+    #texto1 {
+        text-align: center;
+    }
+    #servicos {
+        text-align: center;
+        font-size: 30px;
+    }
+    .footer {
+        background-color: rgb(99, 56, 240);
+        min-height: 100px;
+    }
+    #texto_footer1 {
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui será o meu menu-->
+            <ul id="link_menu">
+                <li><a href="index.html">Pagina Principal</a></li><br><br><hr>
+                <li><a href="sobre.html">Sobre a Clínica</a></li><br><br><hr>
+                <li><a href="valores.html">Consulta e Valores</a></li><br><br><hr>
+                <li><a href="horario.html">Horário de Atendimento</a></li><p><hr>
+                <li><a href="contato.html">Entre em Contato</a></li><p><hr>
+                <li><a href="video_inst.html">Vídeo Institucional</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="img/imclinita_sobre.jpg" width="1000" height="200" title="Logo Inicial">
+                <p id="nome_empresa"><font color="black" face="'Trebuchet MS">clin</font><font color="violet">ITA</font></p>
+                <!-- Aqui vai ser o meu Header-->
+            </div>
+            <div class="content">
+                <h1>Sobre A Clínica</h1> <br>
+                <p><i>Inaugurada em 2004 como um grande presente para o aniversário de Itamaraju, 
+                    a <font color="black" face="'Trebuchet MS">clin</font><font color="violet">ITA</font>
+                    tem como foco o atendimento médico para pessoas que não possuem plano de saúde e nem
+                    desejam pagar caro por seus procedimentos.</i></p><br>
+                        <p><i>A <font color="black" face="'Trebuchet MS">clin</font><font color="violet">ITA</font> revolucionou
+                    o segmento de saúde ao proporcionar medicina com excelência, de maneira
+                    acessível. O paciente tem a oportunidade de pagar apenas pelo serviço utilizado
+                    (consultas ou exames), isto é, sem pagar mensalidade. Um conceito de saúde sob demanda 
+                    inovador, que atende quem não tem plano de saúde, mas também quem é conveniado e deseja 
+                    agilidade no agendamento de consultas.</i></p><br><br>
+                         <a href= "index.html">(Voltar)</a> </h2>
+                <!--Aqui vai ser o meu conteúdo-->
+            </div>
+
+            <div class="footer"> 
+                <h2 id="texto_footer1">CENTRAL DE ATENDIMENTO</h2>
+                <p><font face="Monotype Corsiva">Contato / Whatsapp: (73)98805-2085 &emsp; &emsp;
+                    &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;
+                    Site: www.clinita.com &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;
+                    &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    &ensp;Instagram: @clinita</p></font>
+                <!--Aqui vai ser o meu rodapé-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
